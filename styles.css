@@ -3,15 +3,15 @@
  header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center ;*/
     padding: 1rem;
-    background-color: #9e99ee;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #dddddd;
+    border-bottom: 5px solid rgb(252, 252, 252);
     
 }
 /*Personalización del Contenido: Información General: style.css*/
 h1 {
-    background-color: #0077cc;
+    background-color: #6f9c89;
     color: white;
     padding: 20px;
     text-align: center;
