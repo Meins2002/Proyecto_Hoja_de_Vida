@@ -1,3 +1,21 @@
+/*Modifica el archivo styles.css utilizando flexbox para estilizar el encabezado <header> , de manera que el título
+ y los enlaces de navegación estén alineados horizontalmente*/
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #9e99ee;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+}
+/*Personalización del Contenido: Información General: style.css*/
+h1 {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 /*Diseño General: En tu archivo styles.css: css*/
 body {
     font-family: Arial, sans-serif;
@@ -14,13 +32,7 @@ a {
     color: #0077cc;
     text-decoration: none;
 }
-/*Personalización del Contenido: Información General: style.css*/
-h1 {
-    background-color: #0077cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+
 
 p {
     margin: 10px 0;
@@ -80,4 +92,21 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0055a4;
+}
+
+/* Utiliza grid para estilizar la sección "Mis Proyectos" en el index.html. Crea un diseño de dos columnas para 
+presentar los proyectos.*/
+.mis-proyectos {
+    display: flex;
+    display: grid;
+    justify-content: start; /* Separa las cajas con espacio entre ellas */
+    align-items: center; /* Alinea verticalmente las cajas en el centro */
+    padding: 10px; /* Espacio entre el borde del contenedor y las cajas */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* Centra el contenido principal de ambas páginas usando margin y definición de ancho:*/
+main {
+    width: 80%;
+    margin: 0 auto;
 }
