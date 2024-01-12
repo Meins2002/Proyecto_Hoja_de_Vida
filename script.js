@@ -57,3 +57,17 @@ anteriores a esta sintaxis moderna*/
 const saludoPersonalizado = () => {
     alert("¡Gracias por visitar mi sección de experiencia laboral!");
 }
+/*Ciclos en JavaScript*/
+/*En tu archivo script.js, crea un arreglo con una lista de certificaciones*/
+const certificaciones = ["Curso A", "Curso B", "Taller C", "Seminario D"];
+
+/*función que utilice un bucle para añadir estas certificaciones a tu hoja de vida*/
+function mostrarCertificaciones() {
+    let ul = document.getElementById('listaCertificaciones'); // Suponiendo que tienes un <ul id="listaCertificaciones"> en tu HTML
+    
+    for (let i = 0; i < certificaciones.length; i++) {
+        let li = document.createElement('li');
+        li.textContent = certificaciones[i];
+        ul.appendChild(li);
+    }
+}

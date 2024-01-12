@@ -85,8 +85,13 @@
           <td>DataBase</td>
           <td>Basico</td>
         </tr>
-
+        <button onload= "mostrarCertificaciones()">Mostrar Certificaciones</button>
       </table>
+
+      <script>
+       
+      window.onload = mostrarCertificaciones;
+      </script>
 
       <h2>Mis Proyectos</h2>
 
@@ -115,7 +120,7 @@
         <button id="contactar">Contactar</button>
        <!-- <input type="submit" value="Contactar" /> -->
       </form>
-      <!--Agragando funciones-->
+      <!--Agregando funciones-->
       <button onclick="calificarHojaDeVida()">Calificar hoja de vida</button>
       <script>
         saludoPersonalizado();
