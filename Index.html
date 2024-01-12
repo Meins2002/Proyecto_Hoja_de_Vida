@@ -71,7 +71,8 @@
 
       <h2>Habilidades Técnicas</h2>
       <table>
-      <button id="addSkill">Añadir Habilidad</button>
+     <!-- <button id="addSkill">Añadir Habilidad</button> -->
+      <button onclick="añadirHabilidad()">Agregar habilidad</button>
         <tr>
           <th>Habilidad</th>
           <th>Nivel</th>
@@ -114,7 +115,11 @@
         <button id="contactar">Contactar</button>
        <!-- <input type="submit" value="Contactar" /> -->
       </form>
-
+      <!--Agragando funciones-->
+      <button onclick="calificarHojaDeVida()">Calificar hoja de vida</button>
+      <script>
+        saludoPersonalizado();
+        </script>
   </main>
   <script src="script.js"></script>
   </body>

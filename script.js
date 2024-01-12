@@ -28,3 +28,32 @@ document.getElementById("contactar").addEventListener("click", function() {
     var correo = mostrarPrompt();
     mostrarAlerta(correo);
   });
+
+/*Transforma la funcionalidad que añadiste para agregar habilidades en un proyecto anterior en una función*/
+  function añadirHabilidad() {
+    let newSkill = prompt("Introduce una nueva habilidad:");
+    if (newSkill) {
+        let ul = document.getElementById('skillsList');
+        let li = document.createElement('li');
+        li.textContent = newSkill;
+        ul.appendChild(li);
+    }
+}
+document.getElementById('addSkill').addEventListener('click', añadirHabilidad);
+
+/*función que muestre un mensaje personalizado al visitante. Esta función puede ser llamada cada vez que 
+alguien visite una sección específica de tu hoja de vida*/
+function saludoPersonalizado() {
+    alert("¡Gracias por visitar mi sección de experiencia laboral!");
+}
+
+/* Declara una función como constante que permita al usuario calificar tu hoja de vida */
+const calificarHojaDeVida = () => {
+    let calificacion = prompt("Del 1 al 10, ¿cómo calificarías mi hoja de vida?");
+    alert(`¡Gracias por calificar con un ${calificacion}!`);
+}
+/* Introduce el concepto de** Arrow Functions** al convertir alguna de tus funciones 
+anteriores a esta sintaxis moderna*/
+const saludoPersonalizado = () => {
+    alert("¡Gracias por visitar mi sección de experiencia laboral!");
+}
